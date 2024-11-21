@@ -1,47 +1,5 @@
-import { Manrope } from "next/font/local";
 import "./globals.css";
-
-// fonts declear
-const manrope = Manrope({
-  src: [
-    {
-      path: "./fonts/manrope/Manrope-ExtraLight.ttf",
-      weight: "200",
-      style: "normal",
-    },
-    {
-      path: "./fonts/manrope/Manrope-Light.ttf",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "./fonts/manrope/Manrope-Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "./fonts/manrope/Manrope-Medium.ttf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "./fonts/manrope/Manrope-SemiBold.ttf",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "./fonts/manrope/Manrope-Bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "./fonts/manrope/Manrope-ExtraBold.ttf",
-      weight: "800",
-      style: "normal",
-    },
-  ],
-  preload: true,
-});
+import Footer from "@/shared/footer/Footer";
 
 export const metadata = {
   title: "E-Commerce Landing Page",
@@ -51,7 +9,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`antialiased font-manrope`}>{children}</body>
+      <body className={`antialiased font-manrope`}>
+        {children}
+
+        {/* footer */}
+        <Footer>&copy; 2024 | We5ive</Footer>
+      </body>
     </html>
   );
 }
