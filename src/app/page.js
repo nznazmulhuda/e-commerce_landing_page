@@ -1,7 +1,10 @@
 import Button_arrival from "@/shared/buttons/button_arrival/Button_arrival";
 import Button_arrow from "@/shared/buttons/button_arrow/Button_arrow";
+import Button_buy from "@/shared/buttons/button_buy/Button_buy";
 import Button_cart from "@/shared/buttons/button_cart/Button_cart";
+import Button_see from "@/shared/buttons/button_see/Button_see";
 import Button_shop from "@/shared/buttons/button_shop/Button_shop";
+import Button_subs from "@/shared/buttons/button_subs/Button_subs";
 import Description from "@/shared/description/Description";
 
 const HomePage = () => {
@@ -21,6 +24,11 @@ const HomePage = () => {
         <Button_arrow left={true} />
         <Button_arrow />
       </div>
+
+      <Button_subs>Subscribe</Button_subs>
+      <Button_see href={"/shop"}>See more</Button_see>
+
+      <Button_buy href={"/deals"}>Buy Now</Button_buy>
       <Description className={"text-primary_700 w-[500px]"}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra,
         nulla vel consectetur laoreet, nunc mauris dictum mauris, at ultricies
