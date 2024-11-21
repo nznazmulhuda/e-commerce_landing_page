@@ -4,10 +4,13 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/shared/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
+        black: "#1D1D1D",
+        default: "#FFFFFF",
         primary_50: "#F6F5FD",
         primary_100: "#EEECFB",
         primary_200: "#E0DCF8 ",
@@ -19,8 +22,6 @@ module.exports = {
         primary_800: "#5C36A1",
         primary_900: "#4D2E84",
         primary_950: "#2F1C59",
-        black: "#1D1D1D",
-        default: "#FFFFFF",
       },
       fontFamily: {
         manrope: ["Manrope", "sans-serif"],
