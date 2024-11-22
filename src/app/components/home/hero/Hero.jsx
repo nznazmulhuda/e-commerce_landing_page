@@ -1,7 +1,4 @@
-import heroImage from "@/assets/homePage/hero.png";
 import Button_shop from "@/shared/buttons/button_shop/Button_shop";
-import Description from "@/shared/description/Description";
-import Image from "next/image";
 
 function Hero() {
   return (
