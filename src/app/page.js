@@ -6,6 +6,7 @@ import Button_see from "@/shared/buttons/button_see/Button_see";
 import Button_shop from "@/shared/buttons/button_shop/Button_shop";
 import Button_subs from "@/shared/buttons/button_subs/Button_subs";
 import Description from "@/shared/description/Description";
+import Logo from "@/shared/logo/Logo";
 import Price from "@/shared/price/Price";
 import Section_title from "@/shared/section_title/Section_title";
 
@@ -41,6 +42,10 @@ const HomePage = () => {
       </Description>
       <Section_title />
       <Price>bdt 2,300</Price>
+      <Logo className={"w-[50.61px] h-[28.57px]"} />
+      <div className="bg-black">
+        <Logo className={"w-[62px] h-[35px]"} light={true} />
+      </div>
     </>
   );
 };
