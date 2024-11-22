@@ -10,12 +10,16 @@ import Logo from "@/shared/logo/Logo";
 import Price from "@/shared/price/Price";
 import Section_title from "@/shared/section_title/Section_title";
 import Hero from "./components/home/hero/Hero";
+import Offer from "./components/home/offer/Offer";
 
 const HomePage = () => {
   return (
     <>
       {/* hero section */}
       <Hero />
+
+      {/* offer section */}
+      <Offer />
 
       <Button_arrival>New Arrival</Button_arrival>
       <Button_shop href={"/shop"} />

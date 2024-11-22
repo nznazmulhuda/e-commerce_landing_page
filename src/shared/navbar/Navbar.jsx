@@ -39,7 +39,7 @@ function Navbar() {
   const pathName = usePathname();
 
   return (
-    <nav className="bg-[#F5F3FF] py-[19.5px]">
+    <nav className="bg-[#F5F3FF] pt-[19.5px] pb-[20.5px]">
       <div className="w-[1280px] h-[40px] mx-auto flex justify-between">
         {/* dark logo */}
         <Logo className={"w-[50.61px] h-[28.57px]"} />
@@ -98,3 +98,4 @@ function Navbar() {
 }
 
 export default Navbar;
+ 
