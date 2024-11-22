@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
-import { FaArrowUpLong } from "react-icons/fa6";
+import arrow from "@/assets/arrow_up.svg";
 
-function Button_shop({ href }) {
+function Button_shop({ href, className }) {
   const [isHover, setIsHover] = useState(false);
   return (
-    <Link href={href} className="w-[197px] h-[48px] flex">
+    <Link href={href} className={`w-[197px] h-[48px] flex ${className}`}>
       <button
         className="flex items-center justify-center text-default"
         onMouseEnter={() => setIsHover(true)}
@@ -28,7 +29,7 @@ function Button_shop({ href }) {
               : " bg-primary_500 rotate-[45deg]"
           }`}
         >
-          <FaArrowUpLong className="text-[22px]" />
+          <Image src={arrow} />
         </span>
       </button>
     </Link>

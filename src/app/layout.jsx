@@ -1,5 +1,5 @@
-import Navbar from "@/shared/navbar/Navbar";
 import "./globals.css";
+import Navbar from "@/shared/navbar/Navbar";
 import Footer from "@/shared/footer/Footer";
 
 export const metadata = {

@@ -9,13 +9,13 @@ import Description from "@/shared/description/Description";
 import Logo from "@/shared/logo/Logo";
 import Price from "@/shared/price/Price";
 import Section_title from "@/shared/section_title/Section_title";
- 
+import Hero from "./components/home/hero/Hero";
+
 const HomePage = () => {
   return (
     <>
-      <h1 className="font-heading_1_bold text-heading_4 text-primary_500">
-        This is Home page!
-      </h1>
+      {/* hero section */}
+      <Hero />
 
       <Button_arrival>New Arrival</Button_arrival>
       <Button_shop href={"/shop"} />

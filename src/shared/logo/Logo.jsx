@@ -26,11 +26,11 @@ function Logo({ className, light }) {
     <figure className="flex items-center gap-[6.53px]">
       <Image src={LogoDark} alt="We5ive logo" className={`${className}`} />
 
-      <caption
+      <h2
         className={`${nunitoSans.className} font-bold text-[29.39px] leading-[40.08px] text-black`}
       >
         We<span className="text-[#7436F1]">5</span>ive
-      </caption>
+      </h2>
     </figure>
   );
 }
