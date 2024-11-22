@@ -1,6 +1,6 @@
 import Image from "next/image";
-import LogoLight from "@/assets/logo_light.png";
-import LogoDark from "@/assets/logo_dark.png";
+import LogoLight from "@/assets/logo_light.svg";
+import LogoDark from "@/assets/logo_dark.svg";
 import { Nunito_Sans } from "next/font/google";
 
 const nunitoSans = Nunito_Sans({

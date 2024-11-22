@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import Logo from "../logo/Logo";
+import cart from "@/assets/cart.svg";
+import user from "@/assets/user.svg";
+import search from "@/assets/search.svg";
 import { usePathname } from "next/navigation";
 import { Nunito_Sans } from "next/font/google";
-import { FiSearch } from "react-icons/fi";
-import { BsBag } from "react-icons/bs";
-import { IoPersonOutline } from "react-icons/io5";
 
 // get Nunito_Sans font
 const nunitoSans = Nunito_Sans({
@@ -63,20 +64,20 @@ function Navbar() {
           {/* search */}
           <form className="flex items-center gap-2 bg-default  rounded-[17px] p-2">
             {/* seach icon */}
-            <FiSearch />
+            <Image src={search} className="w-[16px] h-[16px]" />
 
             {/* seach field */}
             <input
               type="text"
               placeholder="Search"
-              className={`w-[242px]border-none outline-none focus-within:outline-none focus:outline-none placeholder:leading-[19.1px] text-[14px] text-black bg-transparent ${nunitoSans.className}`}
+              className={`w-[242px] border-none outline-none focus-within:outline-none focus:outline-none placeholder:leading-[19.1px] text-[14px] text-black bg-transparent ${nunitoSans.className}`}
             />
           </form>
 
           {/* cart */}
           <button className="relative">
             {/* cart icon */}
-            <BsBag className="text-[24px]" />
+            <Image src={cart} className="w-[24px] h-[24px]" />
 
             {/* total cart, default 0 */}
             <span
@@ -88,7 +89,7 @@ function Navbar() {
 
           {/* user */}
           <button>
-            <IoPersonOutline className="text-[24px]" />
+            <Image src={user} className="w-[24px] h-[24px]" />
           </button>
         </div>
       </div>

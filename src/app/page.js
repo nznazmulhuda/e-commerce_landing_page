@@ -9,7 +9,7 @@ import Description from "@/shared/description/Description";
 import Logo from "@/shared/logo/Logo";
 import Price from "@/shared/price/Price";
 import Section_title from "@/shared/section_title/Section_title";
-
+ 
 const HomePage = () => {
   return (
     <>
