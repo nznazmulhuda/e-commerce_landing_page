@@ -6,6 +6,7 @@ import Button_see from "@/shared/buttons/button_see/Button_see";
 import Button_shop from "@/shared/buttons/button_shop/Button_shop";
 import Button_subs from "@/shared/buttons/button_subs/Button_subs";
 import Description from "@/shared/description/Description";
+import Section_title from "@/shared/section_title/Section_title";
 
 const HomePage = () => {
   return (
@@ -37,6 +38,7 @@ const HomePage = () => {
         consectetur. Integer tincidunt, urna vel condimentum dignissim, felis
         velit semper nunc, vel vestibulum velit velit at sapien.
       </Description>
+      <Section_title />
     </>
   );
 };
