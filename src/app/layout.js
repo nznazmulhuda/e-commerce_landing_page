@@ -1,3 +1,4 @@
+import Navbar from "@/shared/navbar/Navbar";
 import "./globals.css";
 import Footer from "@/shared/footer/Footer";
 
@@ -10,6 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`antialiased font-manrope`}>
+        {/* navbar */}
+        <Navbar />
+
+        {/* dynamically component added */}
         {children}
 
         {/* footer */}
