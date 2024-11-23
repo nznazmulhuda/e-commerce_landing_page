@@ -34,6 +34,14 @@
   padding-bottom: 16px;
 }
 
+.discount {
+  width: 427px;
+  height: 495px;
+  flex-shrink: 0;
+  background: url(https://s3-alpha-sig.figma.com/img/adb5/841f/c3c2ff14f8433966aa51e24fae4e4275?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nzNJAqxLP~ZK6V3XYJYWPwhH8R8TWSIpRITQv5ys2ahBe5Hi5wggT9xG1zNxknuH2dr17LYgEsPDI-i4ey03E0xkO97JrltuVmgMvU1MYfAkMymyWn5OQKj~k7foQrw~Wt~rkL8TTxNG6ByE~agSJA~0A2GVa6AhEvqmkL~vbhXptgm-Jzb0q7ThZDXZaC788g5SF52YTRIXdlqmvMs4-0kUbnFYBbBbs3gPKmKKhT1cl04bk3ED6TbOLrlXbCdboUDw4IOy3m8JKmg7q8qZKUX2cHeDYCIXnCkSxmSRvdAKubiXtaaz6Fagq0i9MzdAgnV9sYlisTyAh1fB1-2-9w__) -228.23px
+    0px / 166.251% 100% no-repeat;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
