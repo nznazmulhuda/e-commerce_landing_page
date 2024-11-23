@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         {children}
 
         {/* footer */}
-        <Footer>&copy; 2024 | We5ive</Footer>
+        <Footer />
       </body>
     </html>
   );

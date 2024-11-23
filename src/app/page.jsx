@@ -36,36 +36,6 @@ const HomePage = () => {
 
       {/* big deal */}
       <Deal />
-
-      <Button_arrival>New Arrival</Button_arrival>
-      <Button_shop href={"/shop"} />
-      <Button_cart href={"/shop/20"}>Add to Cart</Button_cart>
-      <Button_cart href={"/shop/22"}>Add to Cart</Button_cart>
-      <Button_cart href={"/shop/50"}>Add to Cart</Button_cart>
-      <Button_cart href={"/shop/30"}>Add to Cart</Button_cart>
-      <div className="flex gap-4">
-        <Button_arrow left={true} />
-        <Button_arrow />
-      </div>
-
-      <Button_subs>Subscribe</Button_subs>
-      <Button_see href={"/shop"}>See more</Button_see>
-
-      <Button_buy href={"/deals"}>Buy Now</Button_buy>
-      <Description className={"text-primary_700 w-[500px]"}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra,
-        nulla vel consectetur laoreet, nunc mauris dictum mauris, at ultricies
-        mi turpis ut justo. Integer vel nunc in ligula aliquet finibus. Sed vel
-        tristique neque, at auctor neque. Sed et ex vel neque facilisis
-        consectetur. Integer tincidunt, urna vel condimentum dignissim, felis
-        velit semper nunc, vel vestibulum velit velit at sapien.
-      </Description>
-      <Section_title />
-      <Price>bdt 2,300</Price>
-      <Logo className={"w-[50.61px] h-[28.57px]"} />
-      <div className="bg-black">
-        <Logo className={"w-[62px] h-[35px]"} light={true} />
-      </div>
     </>
   );
 };
