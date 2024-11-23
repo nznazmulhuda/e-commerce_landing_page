@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`antialiased font-manrope`}>
+      <body className={`antialiased font-manrope bg-[#F4F8FF]`}>
         {/* navbar */}
         <Navbar />
 

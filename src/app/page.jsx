@@ -11,6 +11,7 @@ import Price from "@/shared/price/Price";
 import Section_title from "@/shared/section_title/Section_title";
 import Hero from "./components/home/hero/Hero";
 import Offer from "./components/home/offer/Offer";
+import New_arrivals from "./components/home/new_arrivals/New_arrivals";
 
 const HomePage = () => {
   return (
@@ -20,6 +21,9 @@ const HomePage = () => {
 
       {/* offer section */}
       <Offer />
+
+      {/* new arrivals section */}
+      <New_arrivals />
 
       <Button_arrival>New Arrival</Button_arrival>
       <Button_shop href={"/shop"} />
