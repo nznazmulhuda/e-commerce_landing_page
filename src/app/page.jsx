@@ -14,6 +14,7 @@ import Offer from "./components/home/offer/Offer";
 import New_arrivals from "./components/home/new_arrivals/New_arrivals";
 import Discount from "./components/home/discount/Discount";
 import HeroSlider from "./components/home/heroSlider/HeroSlider";
+import Deal from "./components/home/deal/Deal";
 
 const HomePage = () => {
   return (
@@ -32,6 +33,9 @@ const HomePage = () => {
 
       {/* hero slider */}
       <HeroSlider />
+
+      {/* big deal */}
+      <Deal />
 
       <Button_arrival>New Arrival</Button_arrival>
       <Button_shop href={"/shop"} />
