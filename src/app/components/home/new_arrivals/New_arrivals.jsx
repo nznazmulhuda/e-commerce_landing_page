@@ -25,9 +25,9 @@ function New_arrivals() {
     );
   };
   return (
-    <section className="w-[1280px] flex flex-col gap-6 mt-[47px] mx-auto">
+    <section className="w-full md:w-[1280px] flex flex-col gap-6 mt-[40px] md:mt-[47px] mx-auto">
       {/* section title and navigation button */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between px-4 md:px-0">
         {/* section title */}
         <Section_title title={"Featured Product"} heading={"New Arrivals"} />
 
@@ -47,7 +47,10 @@ function New_arrivals() {
           }}
         >
           {products.map((product) => (
-            <div key={product.id} className={`w-[302px] flex-shrink-0`}>
+            <div
+              key={product.id}
+              className={`w-[286px] md:w-[302px] flex-shrink-0`}
+            >
               <div className="p-2 bg-default rounded-[16px] overflow-hidden flex flex-col gap-4">
                 <div className="relative pb-[133%] bg-primary_50 rounded-[8px] overflow-hidden">
                   <img
