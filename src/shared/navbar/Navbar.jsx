@@ -116,21 +116,21 @@ function Navbar() {
               <path
                 d="M4 5H16"
                 stroke="#141B34"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
                 d="M4 12H20"
                 stroke="#141B34"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
                 d="M4 19H12"
                 stroke="#141B34"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />

@@ -4,7 +4,9 @@
 
 .hero {
   display: flex;
+  width: 100%; /* Default to 100% width */
   height: 500px;
+  padding: 111px 16px 112px 16px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -15,6 +17,23 @@
     ),
     url(https://s3-alpha-sig.figma.com/img/8d85/bb17/9d972fb25b5ad899dca00d131d9f310c?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FhXN6ihLSUkEWLMTdLLYrtolM-LGXORSrGG7j46V~OqhOXqKCtv5C6p6kfGbhsFcbAiRr~yUtuaO5va8N4FW7vedwbGBJVKxABuJKp3In35~Ok6JWiXmmc9vMoghm3PMHl1Iz3HStJbKePgnDophkhPGohJIunkg7AbvObX3CeuuIKi6Xtjj~lY6Iu1Lg~DUUIfz5~9lW4i-9GoEwRJxTSfvq-1NbhpMVk8bVcygZ8GPwc-oeT69YOX63BtrEJniTblh8SqJlwKS00wWl1OQ1DcQoo5NQMyN5IjJM2SMR5rtCgQzBedPAm6bN0E4F9n~tMJJdq6NGVlan1E7U3bsyA__)
       lightgray 0px -59.879px / 100% 191.952% no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    display: flex;
+    width: 100%;
+    padding: 111px 16px 112px 16px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        0deg,
+        rgba(17, 17, 17, 0.5) 0%,
+        rgba(17, 17, 17, 0.5) 100%
+      ),
+      url(https://s3-alpha-sig.figma.com/img/8d85/bb17/9d972fb25b5ad899dca00d131d9f310c?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FhXN6ihLSUkEWLMTdLLYrtolM-LGXORSrGG7j46V~OqhOXqKCtv5C6p6kfGbhsFcbAiRr~yUtuaO5va8N4FW7vedwbGBJVKxABuJKp3In35~Ok6JWiXmmc9vMoghm3PMHl1Iz3HStJbKePgnDophkhPGohJIunkg7AbvObX3CeuuIKi6Xtjj~lY6Iu1Lg~DUUIfz5~9lW4i-9GoEwRJxTSfvq-1NbhpMVk8bVcygZ8GPwc-oeT69YOX63BtrEJniTblh8SqJlwKS00wWl1OQ1DcQoo5NQMyN5IjJM2SMR5rtCgQzBedPAm6bN0E4F9n~tMJJdq6NGVlan1E7U3bsyA__)
+        lightgray -234.062px -27.087px / 233.863% 164.311% no-repeat;
+  }
 }
 
 .offer {
