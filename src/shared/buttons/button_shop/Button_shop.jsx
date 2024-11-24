@@ -29,7 +29,7 @@ function Button_shop({ href, className }) {
               : " bg-primary_500 rotate-[45deg]"
           }`}
         >
-          <Image src={arrow} />
+          <Image src={arrow} alt="arrow" />
         </span>
       </button>
     </Link>

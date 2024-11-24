@@ -27,6 +27,7 @@ const ProductShowcase = () => {
       <div className="relative flex-shrink-0">
         <Image
           src={images[currentImage]}
+          alt="Image"
           className="w-[580px] h-[507px] mx-auto"
         />
 
@@ -49,7 +50,11 @@ const ProductShowcase = () => {
             onClick={() => setCurrentImage(index + 1)}
             className={`w-[137px] h-[142px] bg-[#ECE9FE] rounded-[16px] overflow-hidden flex items-center justify-center`}
           >
-            <Image src={img} className="object-cover w-full h-full" />
+            <Image
+              src={img}
+              alt="picture"
+              className="object-cover w-full h-full"
+            />
           </button>
         ))}
       </div>

@@ -64,7 +64,11 @@ function Navbar() {
           {/* search */}
           <form className="flex items-center gap-2 bg-default  rounded-[17px] p-2">
             {/* seach icon */}
-            <Image src={search} className="w-[16px] h-[16px]" />
+            <Image
+              src={search}
+              alt="search icon"
+              className="w-[16px] h-[16px]"
+            />
 
             {/* seach field */}
             <input
@@ -77,7 +81,7 @@ function Navbar() {
           {/* cart */}
           <button className="relative">
             {/* cart icon */}
-            <Image src={cart} className="w-[24px] h-[24px]" />
+            <Image src={cart} alt="cart icon" className="w-[24px] h-[24px]" />
 
             {/* total cart, default 0 */}
             <span
@@ -89,7 +93,7 @@ function Navbar() {
 
           {/* user */}
           <button>
-            <Image src={user} className="w-[24px] h-[24px]" />
+            <Image src={user} alt="user icon" className="w-[24px] h-[24px]" />
           </button>
         </div>
       </div>

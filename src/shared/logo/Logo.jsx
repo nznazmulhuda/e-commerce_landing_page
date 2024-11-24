@@ -13,11 +13,11 @@ function Logo({ className, light }) {
       <figure className="flex items-center gap-2">
         <Image src={LogoLight} alt="We5ive logo" className={`${className}`} />
 
-        <caption
+        <span
           className={`${nunitoSans.className} font-bold text-[36px] leading-[49.1px] text-default`}
         >
           We<span className="text-[#7436F1]">5</span>ive
-        </caption>
+        </span>
       </figure>
     );
   }

@@ -5,7 +5,7 @@ function Feature_card({ src, title, caption }) {
     <div className="flex gap-4">
       {/* icon */}
       <figure>
-        <Image src={src} className="w-[32px] h-[32px]" />
+        <Image src={src} className="w-[32px] h-[32px]" alt="picture" />
       </figure>
 
       {/* feature */}
