@@ -8,6 +8,7 @@ import Button_cart from "@/shared/buttons/button_cart/Button_cart";
 
 const inter = Inter({
   weight: "400",
+  subsets: ['latin']
 });
 
 const ProductDetails = () => {

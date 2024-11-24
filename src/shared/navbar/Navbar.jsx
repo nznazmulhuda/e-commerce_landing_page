@@ -12,6 +12,7 @@ import { Nunito_Sans } from "next/font/google";
 // get Nunito_Sans font
 const nunitoSans = Nunito_Sans({
   weights: "400",
+  subsets: ["latin"],
 });
 
 function Navbar() {

@@ -5,6 +5,7 @@ import { Nunito_Sans } from "next/font/google";
 
 const nunitoSans = Nunito_Sans({
   weights: "700",
+  subsets: ["latin"],
 });
 
 function Logo({ className, light }) {
