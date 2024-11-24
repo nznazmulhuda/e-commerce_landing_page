@@ -16,9 +16,9 @@ const nunito_sans = Nunito_Sans({
 
 function Deal() {
   return (
-    <section className="w-[1280px] flex flex-col gap-6 mt-[80px] mx-auto">
+    <section className="md:w-[1280px] flex flex-col gap-6 mt-[80px] mx-auto">
       {/* section title and navigation button */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between px-4">
         {/* section title */}
         <Section_title title={"Summer"} heading={"Big Deal"} />
 
@@ -30,14 +30,14 @@ function Deal() {
       </div>
 
       {/* slider */}
-      <div className="grid grid-cols-4 gap-6">
+      <div className="flex items-center overflow-hidden md:grid md:grid-cols-4 gap-6">
         {products.map((product) => (
           <div
             key={product.name}
             className="p-2 rounded-2xl bg-default h-[400px] flex flex-col gap-4"
           >
             {/* image */}
-            <div className="bg-primary_50 w-full h-[252px] rounded-[8px] relative flex items-center justify-center overflow-hidden">
+            <div className="bg-primary_50 w-[302px] md:w-full h-[400px] md:h-[252px] rounded-[8px] relative flex items-center justify-center overflow-hidden">
               <Image
                 src={product.image}
                 alt={product.name}

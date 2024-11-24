@@ -15,7 +15,7 @@ function Logo({ className, light }) {
         <Image src={LogoLight} alt="We5ive logo" className={`${className}`} />
 
         <span
-          className={`${nunitoSans.className} font-bold text-[36px] leading-[49.1px] text-default`}
+          className={`${nunitoSans.className} font-bold text-[17.633px] md:text-[36px] leading-normal md:leading-[49.1px] text-default`}
         >
           We<span className="text-[#7436F1]">5</span>ive
         </span>

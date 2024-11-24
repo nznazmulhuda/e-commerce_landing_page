@@ -16,16 +16,21 @@ const nunitoSans = Nunito_Sans({
 function Footer() {
   return (
     <footer className="w-full flex flex-col items-center justify-center mt-[108px]">
-      <div className="bg-black w-full pt-[55px]">
+      <div className="bg-black w-full pt-6 md:pt-[55px]">
         {/* top */}
-        <div className="flex items-center justify-between w-[1280px] mx-auto">
+        <div className="flex flex-col md:flex-row md:items-center justify-between md:w-[1280px] mx-auto px-4 md:px-0">
           {/* left side */}
           <aside>
             {/* logo */}
-            <Logo className={"w-[62px] h-[35px]"} light={true} />
+            <Logo
+              className={"w-[30.367px] md:w-[62px] h-[17.143px] md:h-[35px]"}
+              light={true}
+            />
 
             {/* description */}
-            <Description className={"w-[411px] text-default mt-[27px]"}>
+            <Description
+              className={"w-[411px] text-default mt-[16px] md:mt-[27px]"}
+            >
               Saepe quo suscipit vitae quia. Repudiandae nobis quis. Laboriosam
               unde quae qui quasi mollitia tenetur. Dicta explicabo est
               consectetur maxime quos fugit velit assumenda est.
@@ -33,14 +38,14 @@ function Footer() {
           </aside>
 
           {/* right side */}
-          <aside className="w-[628px]">
-            <h1 className="text-heading_5 font-heading_5_bold leadign-[29.9px] text-default w-full">
+          <aside className="w-full md:w-[628px] mt-6 md:mt-0">
+            <h1 className="text-title md:text-heading_5 font-title_bold md:font-heading_5_bold leading-[24.7px] md:leading-[29.9px] text-default w-full">
               Sign Up For Our Newsletter!
             </h1>
 
             <Description
               className={
-                "items-stretch text-default text-body leading-[20.8px] w-full"
+                "items-stretch text-default text-caption_1 md:text-body leading-[16.9px] md:leading-[20.8px] w-full mt-2 md:mt-0"
               }
             >
               Get notified about updates and be the first to get early access to
@@ -48,7 +53,7 @@ function Footer() {
             </Description>
 
             {/* input */}
-            <form className="mt-[30px] w-full flex bg-default rounded-[8px] rounded-r-[20px]">
+            <form className="mt-[16px] md:mt-[30px] w-full flex bg-default rounded-[8px] rounded-r-[20px]">
               <input
                 type="email"
                 placeholder="Your email address"
@@ -61,7 +66,7 @@ function Footer() {
         </div>
 
         {/* down */}
-        <div className="w-[1280px] mx-auto flex justify-between items-center mt-[64px] mb-[66px]">
+        <div className="md:w-[1280px] mx-auto flex flex-col md:flex-row md:justify-between md:items-center mt-[16px] md:mt-[64px] md:mb-[66px] px-4 md:px-0">
           <div>
             <h1 className="text-default text-body font-body_bold leading-[20.8px] mb-4">
               Contact Us
@@ -91,7 +96,7 @@ function Footer() {
           </div>
 
           {/* social icons */}
-          <div>
+          <div className="mb-12 md:mb-0">
             <h1 className="text-default text-body font-body_bold leading-[20.8px] mb-4">
               Social Link
             </h1>
