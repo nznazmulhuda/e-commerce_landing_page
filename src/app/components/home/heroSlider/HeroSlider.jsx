@@ -1,7 +1,7 @@
 "use client";
 
 import Button_shop from "@/shared/buttons/button_shop/Button_shop";
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 
 // slides data
 const slides = [

@@ -1,18 +1,35 @@
+"use client";
+
 import Button_arrow from "@/shared/buttons/button_arrow/Button_arrow";
 import Section_title from "@/shared/section_title/Section_title";
+import { useState } from "react";
+import { products } from "../../../../../public/fake_data/new_products";
 import Description from "@/shared/description/Description";
 import Price from "@/shared/price/Price";
 import Button_cart from "@/shared/buttons/button_cart/Button_cart";
 import Button_see from "@/shared/buttons/button_see/Button_see";
-import { products } from "../../../../../public/fake_data/new_products";
 
-function New_arrivals() {
+function RelatedProducts() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const productsToShow = 3;
+
+  const next = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex + 1 >= products.length ? 0 : prevIndex + 1
+    );
+  };
+
+  const previous = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex - 1 < 0 ? products.length - 1 : prevIndex - 1
+    );
+  };
   return (
-    <section className="w-[1280px] flex flex-col gap-6 mt-[47px] mx-auto">
+    <>
       {/* section title and navigation button */}
       <div className="flex items-center justify-between">
         {/* section title */}
-        <Section_title title={"Featured Product"} heading={"New Arrivals"} />
+        <Section_title heading={"Related Products"} />
 
         {/* navigation button */}
         <div className="flex gap-2">
@@ -21,7 +38,7 @@ function New_arrivals() {
         </div>
       </div>
 
-      {/* slider */}
+      {/* products */}
       <div className="overflow-hidden">
         <div
           className="flex gap-6 transition-transform duration-300 ease-in-out"
@@ -63,8 +80,8 @@ function New_arrivals() {
       <div className="flex justify-center">
         <Button_see href={"/shop"}>See more</Button_see>
       </div>
-    </section>
+    </>
   );
 }
 
-export default New_arrivals;
+export default RelatedProducts;
