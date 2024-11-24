@@ -101,7 +101,7 @@ function Navbar() {
         </div>
       </nav>
 
-      <nav className="flex items-center justify-between px-[15px] py-4">
+      <nav className="flex md:hidden items-center justify-between px-[15px] py-4">
         {/* logo and menu icon */}
         <aside className="flex items-center gap-2">
           {/* menu icons */}

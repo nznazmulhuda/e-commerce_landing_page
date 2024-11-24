@@ -11,7 +11,7 @@ function Feature_card({ src, title, caption }) {
       {/* feature */}
       <div>
         {/* title */}
-        <h1 className="text-title font-title_semibold leading-[24.7px] text-default uppercase">
+        <h1 className="text-body md:text-title font-body_bold md:font-title_semibold leading-[20.8px] md:leading-[24.7px] text-default uppercase">
           {title}
         </h1>
 
