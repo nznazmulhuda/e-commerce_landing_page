@@ -41,7 +41,7 @@ function layout({ children }) {
       {children}
 
       {/* related product section */}
-      <section>
+      <section className="mt-[80px] flex flex-col gap-6">
         <RelatedProducts />
       </section>
     </main>
