@@ -2,7 +2,7 @@ function Navbar() {
   return (
     <>
       {/* nested link */}
-      <nav className="mt-[61px]">
+      <nav>
         <ul className="flex items-center gap-[72px]">
           <li className="text-title font-title_semibold leading-[24.7px] text-[#747474] cursor-pointer">
             Details
