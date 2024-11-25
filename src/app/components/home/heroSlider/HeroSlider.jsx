@@ -1,7 +1,7 @@
 "use client";
 
 import Button_shop from "@/shared/buttons/button_shop/Button_shop";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 // slides data
 const slides = [
@@ -30,41 +30,59 @@ const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <section className="relative w-full px-4 md:w-[1272px] mx-auto overflow-hidden mt-[31px] md:mt-[91px]">
-      <div className="inset-0 flex flex-col md:flex-row overflow-hidden">
-        {slides.slice(window.innerWidth >= 640 || 0, 2).map((slide, index) => (
+    <section className="relative md:w-[1272px] mx-auto overflow-hidden mt-[91px]">
+      <div className="inset-0 hidden md:flex overflow-hidden ">
+        {slides.map((slide, index) => (
           <div
             key={slide.id}
-            className={`w-full h-full flex-shrink-0 transition-transform duration-500 ease-out flex md:items-center justify-between gap-[8.67px] md:gap-10 ${
-              index % 2 === 0
-                ? "flex-col-reverse md:flex-row-reverse"
-                : "flex-col-reverse md:flex-row"
+            className={`w-full h-full flex-shrink-0 transition-transform duration-500 ease-out flex items-center justify-between gap-10 ${
+              index % 2 === 0 ? "flex-row-reverse" : "flex-row"
             }`}
             style={{
-              transform:
-                window.innerWidth >= 640
-                  ? `translateX(-${currentSlide * 100}%)`
-                  : undefined,
+              transform: `translateX(-${currentSlide * 100}%)`,
             }}
           >
-            <aside className="flex flex-col justify-center gap-4 md:gap-6 flex-1">
-              <h1 className="text-black text-heading_5 md:text-heading_1 font-heading_5_semibold md:font-heading_1_semibold leading-[29.9px] md:leading-[62.4px]">
+            <aside className="flex flex-col justify-center gap-6 flex-1">
+              <h1 className="text-black text-heading_1 font-heading_1_semibold leading-[62.4px]">
                 {slide.title}
               </h1>
-
               <Button_shop href={"/shop"} />
             </aside>
 
-            <aside className="flex relative items-center justify-center w-full">
+            <aside className="flex relative items-center justify-center w-[621px]">
               {/* bg */}
-              <div className="w-full md:w-[621px] h-[302.818px] md:h-[481px] flex-shrink-0 bg-primary_100 absolute bottom-0"></div>
+              <div className="w-[621px] h-[481px] flex-shrink-0 bg-primary_100 absolute bottom-0"></div>
 
               <img
                 src={slide.image}
                 alt="Collection Preview"
-                className={`w-[278.265px] md:w-[468px] h-[356.33px] md:h-[538px] z-[10000] object-cover`}
+                className={`w-[468px] h-[538px] scale-100 object-cover`}
               />
             </aside>
+          </div>
+        ))}
+      </div>
+
+      <div className="flex flex-col w-full md:hidden">
+        {slides.slice(0, 2).map((slide, index) => (
+          <div key={slide.id} className={`w-full flex flex-col px-4`}>
+            <aside className="w-full h-[356.33px] relative overflow-hidden">
+              <img
+                src={slide.image}
+                alt="Collection Preview"
+                className={`object-cover w-[278.265px]  h-[356.33px] mx-auto`}
+              />
+
+              {/* bg */}
+              <div className="h-[302.818px] w-full bg-primary_100 absolute bottom-0 -z-20"></div>
+            </aside>
+
+            <div className="mt-2">
+              <h1 className="text-black text-heading_5 font-heading_5_semibold leading-[29.9px] mb-4 ">
+                {slide.title}
+              </h1>
+              <Button_shop href={"/shop"} />
+            </div>
           </div>
         ))}
       </div>
