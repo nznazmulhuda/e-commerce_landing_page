@@ -23,12 +23,12 @@ const ProductShowcase = () => {
   };
 
   return (
-    <div className="w-[628px] rounded-[16px] bg-primary_50">
+    <div className="w-full md:w-[628px] rounded-[16px] bg-primary_50">
       <div className="relative flex-shrink-0">
         <Image
           src={images[currentImage]}
           alt="Image"
-          className="w-[580px] h-[507px] mx-auto"
+          className="w-[302.93px] md:w-[580px] h-[264.803px] md:h-[507px] mx-auto"
         />
 
         <Button_arrow
@@ -41,9 +41,13 @@ const ProductShowcase = () => {
           func={prevImage}
           className={"absolute top-1/2 -translate-y-1/2"}
         />
+
+        <span className="w-[58px] p-2 flex md:hidden items-center justify-center rounded-[25px] bg-primary_200 text-black text-caption_1 leading-[16.9px] absolute right-2 bottom-2">
+          {currentImage + 1}/{images.length}
+        </span>
       </div>
 
-      <div className="w-full h-[142px] flex gap-4 mt-4">
+      <div className="w-full h-[142px] hidden md:flex gap-4 mt-4">
         {images.slice(1).map((img, index) => (
           <button
             key={index}

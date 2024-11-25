@@ -29,7 +29,7 @@ function Footer() {
 
             {/* description */}
             <Description
-              className={"w-[411px] text-default mt-[16px] md:mt-[27px]"}
+              className={"md:w-[411px] text-default mt-[16px] md:mt-[27px]"}
             >
               Saepe quo suscipit vitae quia. Repudiandae nobis quis. Laboriosam
               unde quae qui quasi mollitia tenetur. Dicta explicabo est

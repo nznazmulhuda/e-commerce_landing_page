@@ -3,7 +3,7 @@ import StarRange from "./StarRange";
 
 function Review() {
   return (
-    <section className="mt-10 flex items-center gap-6">
+    <section className="mt-10 flex flex-col-reverse md:flex-row items-center gap-6">
       {/* left side */}
       <aside className="flex-1">
         {/* dropdown */}
@@ -21,7 +21,7 @@ function Review() {
       </aside>
 
       {/* right side */}
-      <aside className="w-[411px] flex flex-col gap-4">
+      <aside className="md:w-[411px] flex flex-col gap-4">
         {/* top part */}
         <div className="flex flex-col gap-4">
           <div className="flex items-center">

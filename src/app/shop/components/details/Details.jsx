@@ -8,7 +8,7 @@ import Button_cart from "@/shared/buttons/button_cart/Button_cart";
 
 const inter = Inter({
   weight: "400",
-  subsets: ['latin']
+  subsets: ["latin"],
 });
 
 const ProductDetails = () => {
@@ -31,12 +31,12 @@ const ProductDetails = () => {
 
   return (
     <div className="w-full">
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-4 md:gap-6">
         {/* New Arrival Badge */}
         <Button_arrival>New Arrival</Button_arrival>
 
         {/* Product Title */}
-        <h1 className="text-heading_3 font-heading_3_semibold leading-[42.9px] text-black items-stretch">
+        <h1 className="text-title md:text-heading_3 font-title_bold md:font-heading_3_semibold leading-[24.7px] md:leading-[42.9px] text-black items-stretch">
           White Hoodie
         </h1>
 
@@ -76,9 +76,9 @@ const ProductDetails = () => {
       </div>
 
       {/* divider */}
-      <div className="w-full border-t border-dashed my-8"></div>
+      <div className="w-full border-t border-dashed my-4 md:my-8"></div>
 
-      <div className="flex items-start gap-[69px]">
+      <div className="flex flex-col md:flex-row items-start gap-4 md:gap-[69px]">
         {/* Available Size */}
         <div className="flex flex-col gap-4">
           <h3 className="text-black text-title font-title_semibold leading-[24.7px]">
@@ -134,7 +134,7 @@ const ProductDetails = () => {
       </div>
 
       {/* divider */}
-      <div className="w-full border-t border-dashed my-8"></div>
+      <div className="w-full border-t border-dashed my-4 md:my-8"></div>
 
       {/* Quantity */}
       <div className="flex flex-col gap-4">
@@ -193,7 +193,7 @@ const ProductDetails = () => {
       </div>
 
       {/* Action Buttons */}
-      <div className="mt-[32px] w-full flex gap-4">
+      <div className="mt-[32px] w-full flex flex-col md:flex-row gap-4">
         <Button_buy href={"/"} className={"w-full"}>
           Buy Now
         </Button_buy>
