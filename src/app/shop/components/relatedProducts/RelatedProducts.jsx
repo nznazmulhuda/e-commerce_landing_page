@@ -8,6 +8,7 @@ import Description from "@/shared/description/Description";
 import Price from "@/shared/price/Price";
 import Button_cart from "@/shared/buttons/button_cart/Button_cart";
 import Button_see from "@/shared/buttons/button_see/Button_see";
+import Image from "next/image";
 
 function RelatedProducts() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,15 +50,11 @@ function RelatedProducts() {
           {products.map((product) => (
             <div key={product.id} className={`w-[302px] flex-shrink-0`}>
               <div className="p-2 bg-default rounded-[16px] overflow-hidden flex flex-col gap-4">
-                <div className="relative pb-[133%] bg-primary_50 rounded-[8px] overflow-hidden">
-                  <img
+                <div className="relative bg-primary_50 rounded-[8px] overflow-hidden flex items-center justify-center h-[287px]">
+                  <Image
                     src={product.image}
                     alt={product.name}
-                    className={`absolute top-0 left-0 w-full h-full  ${
-                      product.name === "Jacket"
-                        ? "scale-[2] mt-12"
-                        : "object-cover"
-                    }`}
+                    className="h-full"
                   />
                 </div>
 

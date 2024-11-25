@@ -8,7 +8,7 @@ function Button_arrow({ left, right, func, className }) {
       className={`w-[32px] h-[32px] rounded-[16px] border border-primary_600 transition-all duration-500 text-primary_600 hover:text-default hover:bg-primary_600 flex items-center justify-center ${
         left ? "-rotate-[90deg]" : right ? "rotate-[90deg]" : null
       } text-[18px] ${className}`}
-      onClick={() => func()}
+      onClick={() => (func ? func() : console.log("arrow clicked"))}
     >
       <FaArrowUpLong />
     </button>

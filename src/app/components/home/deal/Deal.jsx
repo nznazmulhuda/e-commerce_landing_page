@@ -15,6 +15,9 @@ const nunito_sans = Nunito_Sans({
 });
 
 function Deal() {
+  function handleClick() {
+    console.log("Slider clicked...");
+  }
   return (
     <section className="md:w-[1280px] flex flex-col gap-6 mt-[80px] mx-auto">
       {/* section title and navigation button */}
