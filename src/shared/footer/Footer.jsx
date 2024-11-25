@@ -104,7 +104,7 @@ function Footer() {
             <div className="flex items-center gap-6">
               <Image src={Facebook} alt="Facebook" />
               <Image src={Twitter} alt="Twitter" />
-              <Image src={Linkedin} alt="Linkedin" />f
+              <Image src={Linkedin} alt="Linkedin" />
             </div>
           </div>
         </div>

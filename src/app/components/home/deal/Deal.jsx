@@ -33,7 +33,7 @@ function Deal() {
       <div className="flex items-center overflow-hidden md:grid md:grid-cols-4 gap-6">
         {products.map((product) => (
           <div
-            key={product.name}
+            key={product.id}
             className="p-2 rounded-2xl bg-default h-[400px] flex flex-col gap-4"
           >
             {/* image */}

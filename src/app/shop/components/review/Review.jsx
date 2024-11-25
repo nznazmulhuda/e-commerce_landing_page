@@ -3,11 +3,11 @@ import StarRange from "./StarRange";
 
 function Review() {
   return (
-    <section className="mt-10 flex flex-col-reverse md:flex-row items-center gap-6">
+    <section className="mt-6 md:mt-10 flex flex-col-reverse md:flex-row md:items-center gap-6">
       {/* left side */}
       <aside className="flex-1">
         {/* dropdown */}
-        <select className="border border-primary_600 rounded-[8px] py-2 px-4 flex items-center justify-between text-body font-body_semibold leading-[20.8px] outline-none text-black">
+        <select className="border border-primary_600 rounded-[8px] py-2 px-4 flex items-center justify-between text-body font-body_semibold leading-[20.8px] outline-none text-black bg-transparent">
           <option value="new">Newest</option>
         </select>
 
